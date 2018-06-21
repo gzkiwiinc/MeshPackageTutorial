@@ -1,0 +1,21 @@
+{
+	"presets": [
+	  [
+		"es2015-rollup"
+	  ]
+	],
+	"plugins": [
+	  "transform-decorators-legacy",
+	  "transform-class-properties",
+	  "transform-async-to-generator",
+	  ["transform-runtime", {
+		"helpers": false,
+		"polyfill": false,
+		"regenerator": true
+	  }],
+	  ["babel-snabbdom-jsx", {
+		"pragma": "envoy.createVNode"
+	  }]
+	]
+  }
+  

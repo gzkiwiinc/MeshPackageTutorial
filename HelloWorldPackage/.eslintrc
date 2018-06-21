@@ -1,0 +1,62 @@
+{
+	"parser": "babel-eslint",
+	"extends": [
+		"eslint:recommended",
+		"plugin:react/recommended"
+	],
+	"plugins": [
+		"envoy",
+		"react"
+	],
+	"parserOptions": {
+		"ecmaFeatures": {
+			"jsx": true
+		}
+	},
+	"env": {
+		"node": true,
+		"browser": true,
+		"es6": true
+	},
+	"rules": {
+		"space-before-function-paren": "off",
+		"react/react-in-jsx-scope": "off",
+		"react/display-name": "off",
+		"react/prop-types": "off",
+		"react/no-deprecated": "off",
+		"react/jsx-key": "off",
+		"brace-style": [
+			"error",
+			"allman"
+		],
+		"no-unused-vars": [
+			"warn",
+			{
+				"argsIgnorePattern": "^_.*"
+			}
+		],
+		"no-console": [
+			"warn"
+		],
+		"no-mixed-spaces-and-tabs": [
+			"error"
+		],
+		"envoy/attribute": 2,
+		"envoy/children": 2,
+		"indent": [
+			"error",
+			"tab",
+			{
+				"SwitchCase": 1
+			}
+		]
+	},
+	"globals": {
+		"mesh": true
+	},
+	"settings": {
+		"react": {
+			"pragma": "envoy" // Pragma to use, default to "React"
+		}
+	}
+}
